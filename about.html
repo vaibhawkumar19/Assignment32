@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head> 
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Bhojanwala</title>
+    <link rel="stylesheet" href="about.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:300,300i,400,600,700" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="cover.png" alt="logo">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="contactus.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <style>
+        .logo img{
+          width: 320px;
+          position: relative;
+          top: 3px;
+          right: 100px;
+        }
+      </style>
+
+    <div id="hero" class="hero overlay">
+        <div class="hero-content">
+            <div class="hero-text">
+                <h1>Who Are We?</h1>
+                <p>Hello everyone we are “Bhojanwala”. We at Bhojanwala give you the best technology platform that connects the customers to the best hotel partners and serving their multiple needs. Various customers use our platform to search and discover foods, read and write customer generated reviews and make payments while they are ordering something.<span id="dots">....</span><span id="more" style= "display:none;  font-family: 'Montserrat', sans-serif;"> On the other hand, we provide restaurant partners with industry-specific marketing tools which enable them to engage and acquire customers to grow their business while also providing a reliable and efficient last mile delivery service. We’ve been empowering our customers in discovering new tastes and experiences in just one go. By putting together meticulous information from our customers, we enable them to make an informed choice. We also provide our delivery partners with transparent and flexible earning opportunities.</span></li></p>
+                <button onclick="myFunction()" id="myBtn">Read more</button>
+                <script>
+                    function myFunction() {
+                      var dots = document.getElementById("dots");
+                      var moreText = document.getElementById("more");
+                      var btnText = document.getElementById("myBtn");
+                    
+                      if (dots.style.display === "none") {
+                        dots.style.display = "inline";
+                        btnText.innerHTML = "Read More"; 
+                        moreText.style.display = "none";
+                      } else {
+                        dots.style.display = "none";
+                        btnText.innerHTML = "Read Less"; 
+                        moreText.style.display = "inline";
+                      }
+                    }
+                    </script>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
